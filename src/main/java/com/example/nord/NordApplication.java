@@ -6,8 +6,6 @@ import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.context.annotation.Configuration;
 
 @SpringBootApplication
-//@Configuration
-//@EntityScan(basePackages = {"com.example" })
 public class NordApplication {
 
     public static void main(String[] args) {
