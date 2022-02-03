@@ -39,12 +39,12 @@ public class Controller {
 
 
     @GetMapping("/all")
-    @ApiOperation("Shows all links. Requires an authentication.")
+    @ApiOperation("Shows all links. Requires user to be authenticated.")
     private List<LinkEntity> getAll(){
         return linkService.findAll();
     }
     @DeleteMapping("/delete/{uuid}")
-    @ApiOperation("Deletes a link. Requires an authentication.")
+    @ApiOperation("Deletes a link. Requires user to be authenticated.")
     private String delete(@PathVariable UUID uuid) {
         return linkService.deleteLink(uuid);
     }
